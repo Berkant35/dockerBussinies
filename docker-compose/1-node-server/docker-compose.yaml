@@ -1,0 +1,18 @@
+#1 2 3 yaptığında farklı syntax docker resmi sitesinde bakabilirsin her versionun kendine özgü syntaxı var
+version: "3.4"
+#En önemli kavram SERVICE kavramı
+  #Example <-- <-- <-- <--
+#services:
+ # service-1:
+ # Burası service 1 kısmını kontrol ediyor servisten kastımız  node vb gibi gibi şeyler.
+ #
+ # service-2:
+ # Burası service 2 kısmını kontrol ediyor
+ #
+
+services:
+    node-server:
+        container_name: my-server
+        build: .
+        ports:
+          - 3001:3000
